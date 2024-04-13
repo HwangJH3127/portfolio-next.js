@@ -1,3 +1,5 @@
+import "@/assets/scss/style.scss";
+
 export const metadata = {
   title: "포트폴리오 사이트 Next-Site",
   description: "비트로 제작한 포트폴리오입니다.",
