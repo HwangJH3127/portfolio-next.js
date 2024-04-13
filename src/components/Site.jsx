@@ -12,7 +12,7 @@ export const Site = () => {
         <div className="site__wrap">
           {siteText.map((site, key) => (
             <article className={`site__item s${key + 1}`} key={key}>
-              <span className="num">1.</span>
+              <span className="num">{key + 1}.</span>
               <div className="text">
                 <div>{site.text[0]}</div>
                 <div>{site.text[1]}</div>
