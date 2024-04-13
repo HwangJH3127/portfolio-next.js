@@ -5,26 +5,26 @@ import Image from "next/image";
 const Port = () => {
   return (
     <section id="port">
-      <div class="port__inner">
-        <h2 class="port__title">
+      <div className="port__inner">
+        <h2 className="port__title">
           {portTitle.title[0]} <em>{portTitle.title[1]}</em>
         </h2>
-        <div class="port__wrap">
+        <div className="port__wrap">
           {portText.map((port, key) => (
-            <article class="port__item p1">
-              <span class="num">{port.num}</span>
-              <a href={port.code} target="_blank" class="img">
+            <article className={`port__item p${key + 1}`} key={key}>
+              <span className="num">{port.num}</span>
+              <a href={port.code} target="_blank" className="img">
                 <Image
                   src={port.img}
                   alt={port.name}
-                  width={420}
-                  height={262}
+                  width={0}
+                  height={0}
                   style={{ width: "100%", height: "auto" }}
                 />
               </a>
-              <h3 class="title">{port.title}</h3>
-              <p class="desc">{port.desc}</p>
-              <a href={port.view} target="_blank" class="site">
+              <h3 className="title">{port.title}</h3>
+              <p className="desc">{port.desc}</p>
+              <a href={port.view} target="_blank" className="site">
                 사이트 보기
               </a>
             </article>
